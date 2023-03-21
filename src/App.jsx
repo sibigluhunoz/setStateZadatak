@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Ugnjezdena from './components/Ugnjezdena'
 
 function App() {
   const [text, setTexst] = useState("Ana");
@@ -16,6 +17,7 @@ function App() {
   return (
    <div>
 <span onMouseOver={toggleText} onMouseOut={toggleText}>{label}: {text}</span>
+<Ugnjezdena text={text} />
    </div>
   );
 }
